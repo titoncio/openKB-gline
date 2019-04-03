@@ -2,7 +2,7 @@
     "settings": {
         "route_name": "kb",
         "num_top_results": "10",
-        "date_format": "hh:mm DD/MM/YYYY",
+        "date_format": "HH:mm DD/MM/YYYY",
         "show_view_count": true,
         "update_view_count_logged_in": false,
         "show_published_date": true,
@@ -28,7 +28,7 @@
         },
         "allow_voting": false,
         "google_analytics": "",
-        "theme": "darkly",
+        "theme": "",
         "show_logon": false,
         "add_header_anchors": false,
         "typeahead_search": true,

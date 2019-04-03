@@ -1,5 +1,5 @@
 <div class="row searchBar">
-    <h1 class="text-center">Welcome to {{config.settings.website_title}}</h1>
+    <h1 class="text-center">Bem vindo a {{config.settings.website_title}}</h1>
 	<form action="{{app_context}}/search" id="search_form" method="post">
         {{#if config.settings.show_featured_articles}}
 		    <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 search_bar">
@@ -9,7 +9,7 @@
 			<div class="input-group">
 				<input type="text" name="frm_search" id="frm_search" class="form-control input-lg" placeholder="Search the knowledge base">
 				<span class="input-group-btn">
-					<button class="btn btn-success btn-lg" id="btn_search" type="submit">Search</button>
+					<button class="btn btn-success btn-lg" id="btn_search" type="submit">Pesquisar</button>
 				</span>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
         <div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2">
             <div style="margin-top: 30px;">
                 <ul class="list-group">
-                    <li class="list-group-item list-group-heading">Featured articles</li>
+                    <li class="list-group-item list-group-heading">Artigos em destaque</li>
                     {{#each featured_results}}
                         {{#if this.kb_permalink}}
                             <li class="list-group-item"><h5><a href="{{app_context}}/{{@root.config.settings.route_name}}/{{this.kb_permalink}}">{{this.kb_title}}</a></h5></li>
@@ -50,9 +50,9 @@
                                     <a href="{{app_context}}/{{@root.config.settings.route_name}}/{{this.kb_permalink}}">{{this.kb_title}}</a>
                                     {{#if @root.config.settings.show_published_date}}
                                         {{#if @root.config.settings.show_view_count}}
-                                            <span class="pull-right view_count">&nbsp; / <strong>Date:</strong> {{format_date this.kb_published_date}}</span>
+                                            <span class="pull-right view_count">&nbsp; / <strong>Data:</strong> {{format_date this.kb_published_date}}</span>
                                         {{else}}
-                                            <span class="pull-right view_count"><strong>Date:</strong> {{format_date this.kb_published_date}}</span>
+                                            <span class="pull-right view_count"><strong>Data:</strong> {{format_date this.kb_published_date}}</span>
                                         {{/if}}
                                     {{/if}}
                                     {{#if @root.config.settings.show_view_count}}
